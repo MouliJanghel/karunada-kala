@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.KarunadaKala" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primary_red</item>
+        <item name="colorSecondary">@color/secondary_yellow</item>
+        <item name="android:statusBarColor">@color/primary_red_dark</item>
+    </style>
+
+    <style name="Theme.KarunadaKala" parent="Base.Theme.KarunadaKala" />
+
+    <style name="Theme.KarunadaKala.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/primary_red</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.KarunadaKala</item>
+    </style>
+
+    <!-- Custom Shape Appearances for Material Components -->
+    <style name="ShapeAppearance.Material3.Corner.Full" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>
